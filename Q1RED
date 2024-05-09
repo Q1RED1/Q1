@@ -1,17 +1,8 @@
-__ = 
-
-	"Discord: Actyrn#7104, Server: .gg/wDngb2mv4H"
-
--- Credits to Elegant and Fulcrum, the original script coders
-
--- If ur gonna put in vault / showcase, pls don't put the source code directly or loadstring, put the discord
-
--- DO NOT EDIT BELOW IF YOU DON'T KNOW WHAT YOU'RE DOING!!
 
 repeat wait() until game:IsLoaded()
 
 Drawing = Drawing
-Actyrn7104 = Actyrn7104
+Q1RED = Q1RED
 setfpscap = setfpscap
 syn = syn
 mousemoverel = mousemoverel
@@ -72,25 +63,25 @@ local CamTracerLine = Drawing.new("Line")
 CamTracerLine.Thickness = 2
 
 local TargStats = Instance.new("ScreenGui", CoreGui)
-TargStats.Name = "Actyrn#7104"
+TargStats.Name = "Q1RED"
 TargStats.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 local StatsFrame = Instance.new("Frame", TargStats)
-StatsFrame.Name = "Actyrn#7104"
+StatsFrame.Name = "Q1RED"
 StatsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 StatsFrame.BorderSizePixel = 0
 StatsFrame.Position = UDim2.new(0.388957828, 0, 0.700122297, 0)
 StatsFrame.Size = UDim2.new(0, 360, 0, 70)
 
 local StatsTop = Instance.new("Frame", StatsFrame)
-StatsTop.Name = "Actyrn#7104"
+StatsTop.Name = "Q1RED"
 StatsTop.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 StatsTop.BorderSizePixel = 0
 StatsTop.Position = UDim2.new(0, 0, -0.101449274, 0)
 StatsTop.Size = UDim2.new(0, 360, 0, 7.5)
 
 local StatsName = Instance.new("TextLabel", StatsFrame)
-StatsName.Name = "Actyrn#7104"
+StatsName.Name = "Q1RED"
 StatsName.BackgroundTransparency = 1
 StatsName.Position = UDim2.new(0.220670387, 0, 0.0704225376, 0)
 StatsName.Size = UDim2.new(0, 270, 0, 20)
@@ -102,7 +93,7 @@ StatsName.TextStrokeTransparency = 0
 StatsName.TextWrapped = true
 
 local StatsPicture = Instance.new("ImageLabel", StatsFrame)
-StatsPicture.Name = "Actyrn#7104"
+StatsPicture.Name = "Q1RED"
 StatsPicture.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 StatsPicture.BorderSizePixel = 0
 StatsPicture.Position = UDim2.new(0.0279329624, 0, 0.0704225376, 0)
@@ -111,7 +102,7 @@ StatsPicture.Transparency = 1
 StatsPicture.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 
 local StatsHealthBackground = Instance.new("Frame", StatsFrame)
-StatsHealthBackground.Name = "Actyrn#7104"
+StatsHealthBackground.Name = "Q1RED"
 StatsHealthBackground.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 StatsHealthBackground.BorderSizePixel = 0
 StatsHealthBackground.Position = UDim2.new(0.215083793, 0, 0.348234326, 0)
@@ -119,7 +110,7 @@ StatsHealthBackground.Size = UDim2.new(0, 270, 0, 20)
 StatsHealthBackground.Transparency = 1
 
 local StatsHealthBar = Instance.new("Frame", StatsHealthBackground)
-StatsHealthBar.Name = "Actyrn#7104"
+StatsHealthBar.Name = "Q1RED"
 StatsHealthBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 StatsHealthBar.BorderSizePixel = 0
 StatsHealthBar.Position = UDim2.new(-0.00336122862, 0, 0.164894029, 0)
@@ -301,16 +292,16 @@ end
 
 -- Check for errors
 
-UiLib:CheckErrors(true, true, LocalPlr, __, Actyrn7104)
+UiLib:CheckErrors(true, true, LocalPlr, __, Q1RED)
 
 -- Window
 
-local Actyrn_7104 = UiLib:CreateWindow("Azure Modded | Actyrn#7104 | .gg/wDngb2mv4H", Vector2.new(500, 600), Enum.KeyCode.V)
+local Q1RED = UiLib:CreateWindow("Q1REDHUB | Q1RED | .gg/HqVS5B7h", Vector2.new(500, 600), Enum.KeyCode.V)
 
 -- Tabs
 
-local MainTab = Actyrn_7104:CreateTab("Main")
-local MiscTab = Actyrn_7104:CreateTab("Misc")
+local MainTab = Q1RED:CreateTab("Main")
+local MiscTab = Q1RED:CreateTab("Misc")
 
 -- Sectors
 
@@ -601,7 +592,7 @@ end, "AutoReload")
 
 local TrashTalkTog = UtilitiesSec:AddToggle("Trash Talk", false, function(Value)
 	if Value then
-		local TrashTalkWords = {".gg/wDngb2mv4H", "How to aim pls help", "my lil brother was playing AND HE BEAT U LOLOL :rofl:", "Mobile player beat u lol", "420 ping and u got SLAMMED", "ur bad", "seed", "im not locking ur just bad", "clown", "sonned", "LOLL UR BAD", "dont even try..", "ez", "gg = get good", "my grandmas better than u :skull:", "hop off kid", "bro cannot aim", "u got absolutely DOGGED on", "i run this server son", "what is bro doing :skull:", "no way", "my cat walked across my keyboard and beat u LOLL"}
+		local TrashTalkWords = {"bro get good", "How to aim pls help", "my lil brother was playing AND HE BEAT U LOLOL :rofl:", "Mobile player beat u lol", "420 ping and u got SLAMMED", "ur bad", "seed", "im not locking ur just bad", "clown", "sonned", "LOLL UR BAD", "dont even try..", "ez", "gg = get good", "my grandmas better than u :skull:", "hop off kid", "bro cannot aim", "u got absolutely DOGGED on", "i run this server son", "what is bro doing :skull:", "no way", "my cat walked across my keyboard and beat u LOLL", "My dead grandma hits more shots than that :skully:"}
 
 		ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(TrashTalkWords[math.random(#TrashTalkWords)], "All")
 	end
